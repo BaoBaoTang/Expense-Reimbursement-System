@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <span class="navbar-brand"> Register </span>
+          <a type="button" class="btn btn-warning" href="../">Back</a>
+        </div>
+    </nav>
+
+    <div class="text-danger" id="output-box"></div>
+
+    <form id="register-form">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="username" required>
+            <label for="username">Username</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="firstname" required>
+            <label for="firstname">First Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="lastname" required>
+            <label for="lastname">Last Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" required>
+            <label for="email">Email Address</label>
+        </div>
+
+        <div class="form-floating mb-3" id="role">
+        </div>
+
+        <button class="btn btn-primary" id="register">Register</button>
+    </form>
+
+    <script src = "./script/global.js"></script>
+    <script src = "./script/register.js"></script>
+</body>
+</html>

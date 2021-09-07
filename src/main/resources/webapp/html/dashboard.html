@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empolyee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand">
+              User Dashboard
+            </span>
+            <span id="create-reimbursement"></span> 
+            <button type="button" class="btn btn-warning" onclick="logout()">Logout</button>
+        </div>
+        <div>
+            <select class="form-select" id="filter" onchange="changeFilter()">
+                <option value="All">All</option>
+                <option value="Pending">Pending</option>
+                <option value="Approved">Approved</option>
+                <option value="Denied">Denied</option>
+              </select>
+        </div>
+    </nav>
+
+    <div class="text-danger" id="output-box"></div>
+    
+    <table class="table" id="reimbursement-table">
+        <thead>
+            <tr class = "table-dark">
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Type</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="create-reimbursement"></div>    
+
+    <script src = "./script/global.js"></script>
+    <script src = "./script/dashboard.js"></script>
+</body>
+</html>
