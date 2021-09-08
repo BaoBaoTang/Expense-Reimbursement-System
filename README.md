@@ -17,7 +17,7 @@ The Expense Reimbursement App will manage the process of reimbursing employees f
 * Sonar Cloud
 
 ## Features
-* Register with email, one-time password will be generated and sent throught email
+* Register with email, one-time password will be generated and sent through email
 * Password is encrypted in the database
 * Upload an image as receipt when creating reimbursement, image will be persistent in the database
 * Use log4j to log the errors/exceptions
